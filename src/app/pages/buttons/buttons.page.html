@@ -1,0 +1,77 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Buttons Showcase</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <!-- Icon Buttons -->
+  <h6 class="ion-margin-start ion-text-uppercase">Icon Buttons</h6>
+  <ion-button color="primary" shape="round">
+    <ion-icon slot="icon-only" name="beer"></ion-icon>
+  </ion-button>
+  <ion-button color="secondary">
+    <ion-icon slot="start" name="star"></ion-icon>
+    Star
+  </ion-button>
+  <ion-button color="success">
+    Heart
+    <ion-icon slot="end" name="heart"></ion-icon>
+  </ion-button>
+
+  <!-- Expand Buttons -->
+  <h6 class="ion-margin-start ion-text-uppercase">Expand Buttons</h6>
+  <ion-button color="danger" expand="full">Full Expand</ion-button>
+  <ion-button color="warning" expand="block">Block Expand</ion-button>
+
+  <!-- Shape Buttons -->
+  <h6 class="ion-margin-start ion-text-uppercase">Shape Buttons</h6>
+  <ion-button color="medium" shape="round">Round Button</ion-button>
+
+  <!-- Fill Buttons -->
+  <h6 class="ion-margin-start ion-text-uppercase">Fill Buttons</h6>
+  <ion-button color="dark" fill="solid">Solid</ion-button>
+  <ion-button color="secondary" fill="clear">Clear</ion-button>
+  <ion-button color="danger" fill="outline">Outline</ion-button>
+
+  <!-- Size Buttons -->
+  <h6 class="ion-margin-start ion-text-uppercase">Size Buttons</h6>
+  <ion-button color="primary" size="default">Default</ion-button>
+  <ion-button color="primary" size="small">Small</ion-button>
+  <ion-button color="primary" size="large">Large</ion-button>
+
+  <!-- Custom Button Combinations -->
+  <h6 class="ion-margin-start ion-text-uppercase">Custom Combinations</h6>
+  <ion-button color="tertiary" size="large" shape="round" fill="outline">
+    <ion-icon slot="start" name="rocket"></ion-icon>
+    Launch
+  </ion-button>
+
+  <ion-button color="success" expand="block" shape="round">
+    <ion-icon slot="icon-only" name="thumbs-up"></ion-icon>
+  </ion-button>
+
+  <ion-button color="warning" fill="solid" size="small">
+    <ion-icon slot="start" name="alert"></ion-icon>
+    Warning
+    <ion-icon slot="end" name="alert-circle"></ion-icon>
+  </ion-button>
+
+  <ion-button color="danger" expand="full" size="large" fill="clear">
+    <ion-icon slot="icon-only" name="flame"></ion-icon>
+    Danger Zone
+  </ion-button>
+
+  <ion-button color="dark" shape="round" fill="solid">
+    Dark Mode
+    <ion-icon slot="end" name="moon"></ion-icon>
+  </ion-button>
+
+  <!-- Custom Button-->
+  <ion-button class="myButton">
+    <ion-icon slot="start" name="rocket"></ion-icon>
+    Launch
+  </ion-button>
+  
+
+</ion-content>
