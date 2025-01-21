@@ -1,0 +1,28 @@
+<app-header titulo="FabPage"></app-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <!-- Botón principal del FAB -->
+  <ion-fab slot="fixed" horizontal="start" vertical="bottom">
+    <ion-fab-button color="primary">
+      <ion-icon name="beer"></ion-icon>
+    </ion-fab-button>
+    <!-- Lista de botones desplegables -->
+    <ion-fab-list side="top">
+      <ion-fab-button color="success" [routerLink]="'/cards'">
+        <ion-icon name="arrow-up"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="end">
+      <ion-fab-button color="warning" [routerLink]="'/alerts'">
+        <ion-icon name="arrow-forward"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <!-- Lista de productos -->
+  <ion-list>
+    <ion-item *ngFor="let pro of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; let i = index">
+      Producto #{{ i + 1 }}
+    </ion-item>
+  </ion-list>
+</ion-content>

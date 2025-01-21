@@ -1,0 +1,130 @@
+<app-header titulo="CardsPage"></app-header>
+
+<ion-content>
+  <!-- Recorre la lista de películas -->
+  <ion-card *ngFor="let pelicula of peliculas">
+    <img [src]="pelicula.imagen" [alt]="pelicula.titulo" />
+    <ion-card-header>
+      <ion-card-title>{{ pelicula.titulo }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{ pelicula.sinopsis }}
+    </ion-card-content>
+    <ion-button color="primary" fill="solid">Ver Detalles</ion-button>
+  </ion-card>
+
+  <!-- Si la lista está vacía -->
+  <div *ngIf="peliculas.length === 0">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>No hay películas disponibles</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+  </div>
+</ion-content>
+
+
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    Título de la página
+    <ion-title>Cards en Ionic</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+   Ejemplo de Card con Imagen y Botones
+  <ion-card>
+    <img 
+      src="https://c4.wallpaperflare.com/wallpaper/320/476/33/digital-art-demon-dark-war-wallpaper-preview.jpg" 
+      alt="Aatrox"
+    />
+    <ion-card-header>
+      <ion-card-title>Aatrox</ion-card-title>
+      <ion-card-subtitle>El heraldo de la destrucción</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Totam, temporibus eveniet consequuntur porro minima voluptatum.
+    </ion-card-content>
+     Botones de acción
+    <ion-button color="danger" fill="solid">Favoritos</ion-button>
+    <ion-button color="tertiary" fill="clear">Ver Más</ion-button>
+  </ion-card>
+
+   Ejemplo de Card Horizontal 
+  <ion-card>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img 
+          src="https://c4.wallpaperflare.com/wallpaper/320/476/33/digital-art-demon-dark-war-wallpaper-preview.jpg" 
+          alt="Aatrox"
+        />
+      </ion-avatar>
+      <ion-label>
+        <h2>Aatrox</h2>
+        <p>El heraldo de la destrucción</p>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+   Ejemplo de Card con Fondo Personalizado
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title>Información Importante</ion-card-title>
+      <ion-card-subtitle>Nota destacada</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Esta tarjeta utiliza un fondo claro para destacar del contenido oscuro de la interfaz.
+    </ion-card-content>
+  </ion-card>
+
+   Ejemplo de Card Personalizado con Botones 
+  <ion-card>
+    <img 
+      src="https://c4.wallpaperflare.com/wallpaper/320/476/33/digital-art-demon-dark-war-wallpaper-preview.jpg" 
+      alt="Aatrox"
+    />
+    <ion-card-header>
+      <ion-card-title>Aatrox</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Los botones pueden llevar a acciones específicas. Usa colores para diferenciar las prioridades.
+    </ion-card-content>
+    <ion-button color="primary" fill="solid">Agregar</ion-button>
+    <ion-button color="secondary" fill="outline">Detalles</ion-button>
+  </ion-card>
+
+   Ejemplo de Card con Imagen en la Parte Superior
+  <ion-card>
+    <img 
+      src="https://c4.wallpaperflare.com/wallpaper/320/476/33/digital-art-demon-dark-war-wallpaper-preview.jpg" 
+      alt="Aatrox"
+    />
+    <ion-card-content>
+      Imagen destacada en la parte superior de la tarjeta.
+    </ion-card-content>
+  </ion-card>
+
+</ion-content> -->
+
+
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>Lista de Películas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   Usando @for para iterar
+  <ion-card @for (let pelicula of peliculas; track pelicula.titulo)>
+    <img [src]="pelicula.imagen" [alt]="pelicula.titulo" />
+    <ion-card-header>
+      <ion-card-title>{{ pelicula.titulo }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{ pelicula.sinopsis }}
+    </ion-card-content>
+    <ion-button color="primary" fill="solid">Ver Detalles</ion-button>
+  </ion-card>
+</ion-content> -->

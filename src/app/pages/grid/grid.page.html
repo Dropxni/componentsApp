@@ -1,0 +1,25 @@
+<app-header titulo="Grid Page"></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col style="background-color: aqua;">Soy una columna</ion-col>
+      <ion-col style="background-color: azure ;">soy la otra</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col offset="3" size="6"><ion-card color="light">
+    <ion-card-header>
+      <ion-card-title>Información Importante</ion-card-title>
+      <ion-card-subtitle>Nota destacada</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Esta tarjeta utiliza un fondo claro para destacar del contenido oscuro de la interfaz.
+    </ion-card-content>
+  </ion-card></ion-col>
+      
+    </ion-row>
+  </ion-grid>
+</ion-content>
